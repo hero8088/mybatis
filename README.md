@@ -7,3 +7,12 @@
   
 프로시저 실행
 https://stylishc.tistory.com/103
+
+
+	<!--Procedure Call -->
+	<update id="copy" statementType="CALLABLE" parameterType="HashMap">
+		{ CALL PRC_TPMS_ACTY_COPY_PROJ(
+				#{pjtNo}
+			)
+		}
+	</update>
