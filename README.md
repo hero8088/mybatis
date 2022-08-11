@@ -16,3 +16,8 @@ https://stylishc.tistory.com/103
 			)
 		}
 	</update>
+
+
+# 모든 row가 Null일 때 컬럼이 생략되는 경우 Mapper-Config.xml파일에 
+	<setting name="callSettersOnNulls" value="true"/>
+  추가
