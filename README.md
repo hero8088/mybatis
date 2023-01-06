@@ -21,3 +21,5 @@ https://stylishc.tistory.com/103
 # 모든 row가 Null일 때 컬럼이 생략되는 경우 Mapper-Config.xml파일에 
 	<setting name="callSettersOnNulls" value="true"/>
   추가 [result type이 HashMap인경우 생략되는거 같다]
+
+# IN 안에 파라메터 줄 때는 IN ('${PARA}')
