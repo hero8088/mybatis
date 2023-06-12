@@ -13,6 +13,7 @@ https://stylishc.tistory.com/103
 	<update id="copy" statementType="CALLABLE" parameterType="HashMap">
 		{ CALL PRC_TPMS_ACTY_COPY_PROJ(
 				#{pjtNo}
+				#{OUT_RESULT, mode=OUT, jdbcType=VARCHAR} <!-- 프로시져에서 돌려받을 값 설정 -->
 			)
 		}
 	</update>
