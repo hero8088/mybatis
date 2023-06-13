@@ -25,4 +25,4 @@ https://stylishc.tistory.com/103
 
 # IN 안에 파라메터 줄 때는 IN ('${PARA}')
 
-# <if test='IN_MAX_REV != null and IN_MAX_REV.equals("Y")'> 문자매칭이 안되는 경우 변수명에 _YN, _Y, 등이 포함되어 있지 않는지 확인한다.
+# IN_MAX_REV != null and IN_MAX_REV.equals("Y") 문자매칭이 안되는 경우 변수명에 _YN, _Y, 등이 포함되어 있지 않는지 확인한다.
