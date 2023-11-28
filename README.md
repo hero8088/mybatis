@@ -28,9 +28,8 @@ https://stylishc.tistory.com/103
 # IN_MAX_REV != null and IN_MAX_REV.equals("Y") 문자매칭이 안되는 경우 변수명에 _YN, _Y, 등이 포함되어 있지 않는지 확인한다.
 
 # 대용량 데이터 조회 속도문제 : fetchSize옵션을 줘서 향상시킬수 있다.
-<!--
- <select id="selectLabelList"  parameterType="java.util.HashMap" resultType="nHashMap" fetchSize="2000">
- -->
+select id="selectLabelList"  parameterType="java.util.HashMap" resultType="nHashMap" fetchSize="2000"
+
                               안주면 기본값이 10이어서 10000건의 경우 1000번 입출력이 발생하는데
 			      fetchSize를 2000로 주면 5번만 왔다갔다 한다. 그래서 빨라짐
 	                      메모리에 2000개씩 가지고 있는다는 뜻으로 남발할 경우 서버에 메모리 부족현상 발생
