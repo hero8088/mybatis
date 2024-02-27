@@ -34,3 +34,4 @@ select id="selectLabelList"  parameterType="java.util.HashMap" resultType="nHash
 			      fetchSize를 2000로 주면 5번만 왔다갔다 한다. 그래서 빨라짐
 	                      메모리에 2000개씩 가지고 있는다는 뜻으로 남발할 경우 서버에 메모리 부족현상 발생
 
+CLOB 컬럼 저장 시 MERGE문 쓰면 안된다... 제길슨
