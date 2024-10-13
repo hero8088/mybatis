@@ -38,3 +38,10 @@ CLOB 컬럼 저장 시 MERGE문 쓰면 안된다... 제길슨
 
 # selectKey 사용법 : https://yookeun.github.io/java/2014/07/11/mybatis-selectkey/
 
+<insert id="insertBoard" parameterType="Board">
+    <selectKey resultType="string" keyProperty="boardID" order="BEFORE">
+        SELECT MAX(boardID)+1 FROM board        
+    </selectKey>    
+    INSERT INTO board(boardID, title, content)
+    VALUES(#{boardID}, #{title}, #{content})
+</insert>  
