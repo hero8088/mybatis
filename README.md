@@ -35,3 +35,6 @@ select id="selectLabelList"  parameterType="java.util.HashMap" resultType="nHash
 	                      메모리에 2000개씩 가지고 있는다는 뜻으로 남발할 경우 서버에 메모리 부족현상 발생
 
 CLOB 컬럼 저장 시 MERGE문 쓰면 안된다... 제길슨
+
+# selectKey 사용법 : https://yookeun.github.io/java/2014/07/11/mybatis-selectkey/
+
